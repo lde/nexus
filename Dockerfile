@@ -1,7 +1,7 @@
 FROM maven:3.6.1-jdk-8-alpine AS builder
-ARG nexus_version=3.26.1-02
+ARG nexus_version=3.27.0-03
 ARG github_connect_version=3.1.0
-ARG nexus_composer_version=0.0.7
+ARG nexus_composer_version=0.0.8
 RUN apk -U add curl
 RUN mkdir /composer
 WORKDIR /composer
